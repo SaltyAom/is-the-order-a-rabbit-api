@@ -1,8 +1,10 @@
 # Is The Order a Rabbit API
 This REST API is based on [Is the Order a Rabbit](https://en.wikipedia.org/wiki/Is_the_Order_a_Rabbit%3F)'s [Rabbit House](https://gochiusa.fandom.com/wiki/Rabbit_House) menu according to [สาระน้องต่ายหมวด แรบบิทเฮาส์ ตอนที่ 1](https://www.facebook.com/gochiusa.thailand/photos/a.903554953406269/952039125224518/?type=3&theater) from [รับน้องต่ายซักแก้มั้ยคะ?](https://www.facebook.com/gochiusa.thailand/)
 
-## To use
-Visit or create a get request to: https://is-the-order-a-rabbit-api.now.sh
+![Rabbit House Order](https://user-images.githubusercontent.com/35027979/155830606-10abb8ef-00d1-409b-8ee4-cf93351515e3.jpg)
+
+### To use
+Visit or create a get request to: [https://is-the-order-a-rabbit-api.onrender.com](https://is-the-order-a-rabbit-api.onrender.com)
 
 ### Route
 Available route is consisted of:
@@ -10,37 +12,19 @@ Available route is consisted of:
     - Return all availble menu
 - /:type
     - Return available menu by type
-- /:type/:name
+- /:type/:menu
     - Return requested menu by name in specific type
-
-### Strucutre
-Despite of being RESTful API, API returns JSON as illustrated below:
-```javascript
-{
-    "success": true,
-    "info": null,
-    "data": "<Response>"
-}
-```
-
-Including of:
-- success `boolean`
-    - Determined if requested resources is available
-- info `string` or `null`
-    - To explained the error message
-    - if `success` were `true`, `info` would be null
-    - If `success` were `false`, `info` would be `string` to explained the error message
-- data `Stringified JSON` or `null`
-    - Requested resources
-    - If `success` were `true`, `data` would be `Stringified JSON` of requested resources
-    - if `success` were `false`, `data` would be null
+- /:type/:menu/name
+    - Return name with localization
+- /:type/:menu/name/:locale
+    - Return name by locale
+- /:type/:menu/price
+    - Return price with localization
+- /:type/:menu/price/:price
+    - Return price by locale
 
 ## Contribution
 We welcome all contributions by sending PR to this repository.
-
-### Structure
-- order.json is the main resource of an API.
-- __tests__ 
 
 ### To start a contribution
 
