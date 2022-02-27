@@ -4,7 +4,7 @@ This REST API is based on [Is the Order a Rabbit](https://en.wikipedia.org/wiki/
 ![Rabbit House Order](https://user-images.githubusercontent.com/35027979/155830606-10abb8ef-00d1-409b-8ee4-cf93351515e3.jpg)
 
 ### To use
-Visit or create a get request to: [https://is-the-order-a-rabbit-api.onrender.com](https://is-the-order-a-rabbit-api.onrender.com)
+Visit or create a get request to: [https://rabbit-house.saltyaom.com](rabbit-house.saltyaom.com)
 
 ### Route
 Available route is consisted of:
